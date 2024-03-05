@@ -1,0 +1,6 @@
+@use '../../assets/styles/variables'as v;
+
+footer {
+    background-color: v.$gray-1;
+    color: v.$white;
+}

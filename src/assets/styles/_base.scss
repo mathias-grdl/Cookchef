@@ -1,0 +1,51 @@
+@use "./variables"as v;
+
+* {
+    font-family: v.$font-family;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    background-color: v.$gray-2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s opacity;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-primary {
+    background-color: v.$primary;
+    color: v.$white;
+    border: 1px solid v.$primary
+}
+
+.btn-reverse-primary {
+    background-color: v.$white;
+    color: v.$primary;
+    border: 2px solid v.$primary
+}
+
+.card {
+    border-radius: 20px;
+    background-color: v.$white;
+}
